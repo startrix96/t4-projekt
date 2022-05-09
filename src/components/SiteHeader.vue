@@ -1,4 +1,5 @@
 <template>
+
     <div class="header">
         <img src="../assets/EldenRing-banner.png" />
         <h2>Elden Ring</h2>
