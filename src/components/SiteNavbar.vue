@@ -4,10 +4,10 @@
        
             <nav>
         <router-link to="/">Forside</router-link> |
-        <router-link to="/shop">Shop</router-link>
-        <router-link to="/contact">contact</router-link>
-        <router-link to="/login">login</router-link>
-        <router-link to="/cart">cart</router-link>
+        <router-link to="../views/ShopView">Shop</router-link>
+        <router-link to="../views/ContactView">contact</router-link>
+        <router-link to="../views/LoginView">login</router-link>
+        <router-link to="../views/CartView">cart</router-link>
         
         
     </nav>
