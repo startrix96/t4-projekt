@@ -1,11 +1,11 @@
 <template>
-<div class="header">
-    <div class="wrapper">
-    <div>Elden Ring</div>
+
+    <div class="header">
+        <img src="../assets/EldenRing-banner.png" />
+        <h2>Elden Ring</h2>
         <button class="button button1">Køb nu</button>
     </div>
-    <img src="../assets/EldenRing-banner.png" />
-</div>        
+    <img src="../assets/EldenRing-banner.png" />       
 </template>
 
 <script>

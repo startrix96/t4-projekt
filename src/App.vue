@@ -1,9 +1,5 @@
 <template>
-    <nav>
-        <router-link to="/">Forside</router-link> |
-        <router-link to="/about">Shop</router-link>
-    </nav>
-    <router-view />
+
 
     <SiteNavbar />
     <SiteHeader />

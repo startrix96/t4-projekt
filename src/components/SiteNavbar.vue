@@ -1,10 +1,17 @@
 <template>
     <div class="topnav">
         <a class="active" href="#home">Forside</a>
-        <a href="#news">Shop</a>
-        <a href="#contact">Kontakt</a>
-        <a class="checkout" href="#checkout">Kurv</a>
-        <a class="login" href="#login">Login</a>
+       
+            <nav>
+        <router-link to="/">Forside</router-link> |
+        <router-link to="../views/ShopView">Shop</router-link>
+        <router-link to="../views/ContactView">contact</router-link>
+        <router-link to="../views/LoginView">login</router-link>
+        <router-link to="../views/CartView">cart</router-link>
+        
+        
+    </nav>
+    <router-view />
 
         <input type="text" placeholder="Search.." />
     </div>
