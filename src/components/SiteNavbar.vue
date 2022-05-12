@@ -1,9 +1,5 @@
 <template>
     <div class="topnav">
-<<<<<<< HEAD
-=======
-        <img alt="p2p logo" src="../assets/logo.svg" />
->>>>>>> bennydev
         <nav class="active">
             <router-link to="../views/HomeView">Forside</router-link>
             <router-link to="../views/ShopView">Shop</router-link>
