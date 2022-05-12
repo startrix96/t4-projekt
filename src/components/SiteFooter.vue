@@ -32,22 +32,26 @@
 
         <div class="footer__social">
             <h2>Social</h2>
-            <div class="social__list">
-                <a href="#" class="fa-facebook fa-xl"><fa :icon= "['fab', 'facebook',]"/></a>
-                <a href="#" class="fa-instagram fa-xl"><fa :icon= "['fab', 'instagram',]"/></a>
-                <a href="#" class="fa-youtube fa-xl"><fa :icon= "['fab', 'youtube',]"/></a>
-                <a href="#" class="fa-twitter fa-xl"><fa :icon= "['fab', 'twitter',]"/></a>
 
-                <!-- <fa :icon= "['fab', 'facebook',]"/><a href="#"></a>
+ <div class="social-placeholder">
+                <h1>facebook</h1>
+                <h1>instagram</h1>
+                <h1>youtube</h1>
+                <h1>twitter</h1>
+                 
+
+  <!--           <div class="social__list">
+                 <fa :icon= "['fab', 'facebook',]"/><a href="#"></a>
                 <fa :icon= "['fab', 'youtube',]"/><a href="#"></a>
                 <fa :icon= "['fab', 'instagram',]"/><a href="#"></a>
                 <fa :icon= "['fab', 'twitter',]"/><a href="#"></a>
-                 -->
-            </div>
+                 
+            </div> -->
         </div>
         </div>
        <div class="copyrightText">
            <p>plz dont copy</p>
        </div>
+    </div>
     </div>
 </template>

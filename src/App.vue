@@ -3,6 +3,7 @@
 
     <SiteNavbar />
     <SiteHeader />
+    <SiteFooter />
     <div class="productgrid">
         <div class="product" v-for="product in products" :key="product.id">
             <p class="price">{{ product.attributes.price }} kr</p>
@@ -14,12 +15,14 @@
 <script>
 import SiteNavbar from "./components/SiteNavbar.vue";
 import SiteHeader from "./components/SiteHeader.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 
 export default {
     name: "App",
     components: {
         SiteNavbar,
         SiteHeader,
+        SiteFooter,
     },
     data() {
         return {
