@@ -1,6 +1,7 @@
 <template>
     <SiteNavbar />
     <SiteHeader />
+    <SiteFooter />
 </template>
 
 <script>
