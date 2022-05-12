@@ -33,11 +33,13 @@
         <div class="footer__social">
             <h2>Social</h2>
 
- <div class="social-placeholder">
-                <h1>facebook</h1>
-                <h1>instagram</h1>
-                <h1>youtube</h1>
-                <h1>twitter</h1>
+ <div class="social-placeholder">facebook</div>
+ <div class="social-placeholder">facebook</div>
+ <div class="social-placeholder">facebook</div>
+ <div class="social-placeholder">facebook</div>
+
+
+               
                  
 
   <!--           <div class="social__list">
@@ -47,8 +49,7 @@
                 <fa :icon= "['fab', 'twitter',]"/><a href="#"></a>
                  
             </div> -->
-        </div>
-        </div>
+            </div>
        <div class="copyrightText">
            <p>plz dont copy</p>
        </div>
