@@ -1,8 +1,6 @@
 <template>
     <div class="topnav">
-        <a class="active" href="#home">Forside</a>
-
-        <nav>
+        <nav class="active">
             <router-link to="../views/HomeView">Forside</router-link>
             <router-link to="../views/ShopView">Shop</router-link>
             <router-link to="../views/ContactView">Kontakt</router-link>

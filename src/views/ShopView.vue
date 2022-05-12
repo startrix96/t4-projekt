@@ -7,6 +7,7 @@
         <div class="product" v-for="product in allProducts" :key="product.id">
             <p class="price">{{ product.attributes.price }} kr</p>
             <h3 class="title">{{ product.attributes.title }}</h3>
+            <button>klik mig</button>
         </div>
     </div>
 </template>
