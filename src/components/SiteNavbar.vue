@@ -3,10 +3,11 @@
         <a class="active" href="#home">Forside</a>
 
         <nav>
+            <router-link to="../views/HomeView">Forside</router-link>
             <router-link to="../views/ShopView">Shop</router-link>
-            <router-link to="../views/ContactView">contact</router-link>
-            <router-link to="../views/LoginView">login</router-link>
-            <router-link to="../views/CartView">cart</router-link>
+            <router-link to="../views/ContactView">Kontakt</router-link>
+            <router-link to="../views/LoginView">Login</router-link>
+            <router-link to="../views/CartView">Kurv</router-link>
         </nav>
         <router-view />
 
