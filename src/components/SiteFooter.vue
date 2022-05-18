@@ -1,58 +1,39 @@
 <template>
-    <div class="SiteFooter"> 
-        
-        <div class="footer">
-        <!-- <a class= "footer__logo" href="#">
-            <img src="/images/logo.svg" />
-        </a> -->
-        <div class="logo-placeholder">
-<h1>logo</h1>
-        </div>
-        <div class="footer__department">
-            <h2>Afdelinger</h2>
-            <ul class="department__list">
-            <li><a href="#">Playstation 5</a></li>
-            <li><a href="#">Playstation 4</a></li>
-            <li><a href="#">Nintendo Switch</a></li>
-            <li><a href="#">Xbox Series X</a></li>
-            <li><a href="#">Xbox One</a></li>
-            <li><a href="#">Xbox 360</a></li>
-            <li><a href="#">PC</a></li>
-            <li><a href="#">PC Download</a></li>
-            <li><a href="#">Nintendo 3DS</a></li>   
-            
-            </ul>
-        </div>
-
-        <div class="footer__contact">
-             <h2>Kontakt</h2>
-            <a href="#">Seebladsgade 1, 5000 Odense</a>
+  <footer>
+  <div class="row">
+  <div class="column">
+    <div class="footer-logo"><img src="../assets/logo.png"></div>  
+  </div>
+  <div class="column">
+    <h2>Kategorier</h2>
+    <ul class="footer-list">
+  <li>Playstation 5</li>
+  <li>PC</li>
+  <li>Xbox X</li>
+  <li>Switch</li>
+  </ul> 
+  </div>
+  <div class="column">
+    <h2>Kontakt</h2>
+            <p>Seebladsgade 1, 5000 Odense</p>
             <p>+45 12 34 56 78</p>
-        </div>
+  </div>
+  <div class="column">
+    <h2>Socials</h2>
 
-        <div class="footer__social">
-            <h2>Social</h2>
+ <div class="social-logo"><img src="../assets/facebook.png"></div>
+ <div class="social-logo"><img src="../assets/instagram.png"></div>
+ <div class="social-logo"><img src="../assets/twitter.png"></div>
+ <div class="social-logo"><img src="../assets/twitch.png"></div>
 
- <div class="social-placeholder">facebook</div>
- <div class="social-placeholder">facebook</div>
- <div class="social-placeholder">facebook</div>
- <div class="social-placeholder">facebook</div>
-
-
-               
-                 
-
-  <!--           <div class="social__list">
-                 <fa :icon= "['fab', 'facebook',]"/><a href="#"></a>
-                <fa :icon= "['fab', 'youtube',]"/><a href="#"></a>
-                <fa :icon= "['fab', 'instagram',]"/><a href="#"></a>
-                <fa :icon= "['fab', 'twitter',]"/><a href="#"></a>
-                 
-            </div> -->
-            </div>
-       <div class="copyrightText">
-           <p>plz dont copy</p>
-       </div>
     </div>
-    </div>
+    </div>  
+  </footer>
+
 </template>
+
+<script>
+export default {};
+</script>
+
+<style></style>
