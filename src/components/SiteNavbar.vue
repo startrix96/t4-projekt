@@ -1,12 +1,14 @@
 <template>
-    <div class="topnav">
-        <img alt="p2p logo" src="../assets/logo.svg" />
+    <div class="topnav">        
         <nav class="active">
-            <router-link to="../views/HomeView">Forside</router-link>
-            <router-link to="../views/ShopView">Shop</router-link>
-            <router-link to="../views/ContactView">Kontakt</router-link>
-            <router-link to="../views/LoginView">Login</router-link>
-            <router-link to="../views/CartView">Kurv</router-link>
+            <ul>
+                <li><div class="logo"><img src="../assets/logo.png"></div></li>
+            <li><router-link to="../views/HomeView">Forside</router-link></li>
+            <li><router-link to="../views/ShopView">Shop</router-link></li>
+            <li><router-link to="../views/ContactView">Kontakt</router-link></li>
+            <li><router-link to="../views/LoginView">Login</router-link></li>
+            <li><router-link to="../views/CartView">Kurv</router-link></li>
+            </ul>
         </nav>
         <router-view />
 
@@ -19,3 +21,4 @@ export default {};
 </script>
 
 <style></style>
+
