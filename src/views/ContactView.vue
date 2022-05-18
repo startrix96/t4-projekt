@@ -1,9 +1,18 @@
 <template>
-    <h1>test</h1>
+    <ContactForm />
+
 </template>
 
 <script>
-export default {};
+
+import ContactForm from '@/components/ContactForm.vue'
+export default {
+  components: { ContactForm },};
 </script>
 
-<style></style>
+<style>
+body {
+    margin: 0;
+    background: #eee;
+}
+</style>
