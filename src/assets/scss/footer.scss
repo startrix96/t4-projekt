@@ -1,0 +1,31 @@
+footer {
+    height: calc(100vh - 100px);
+    background-color: white;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: deeppink;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+.footer-logo img {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.footer-list li {
+    display: block;
+    float: left;
+    clear: left;
+}
