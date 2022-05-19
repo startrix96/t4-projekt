@@ -2,12 +2,12 @@ $primary-color: #ed5c00;
 $text-color: #000;
 $b-color: #fff;
 
-.topnav {
+.topnav li{
     overflow: hidden;
     background-color: $b-color;
 }
 
-.topnav a {
+.topnav li a {
     float: left;
     color: $text-color;
     text-align: center;
@@ -16,22 +16,22 @@ $b-color: #fff;
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav li a:hover {
     background-color: #ddd;
     color: $text-color;
 }
 
-.topnav a.active {
+.topnav li .active {
     margin-left: 150px;
     color: $text-color;
 }
 
-.topnav a.login {
+.topnav li a.login {
     float: right;
     color: $text-color;
 }
 
-.topnav a.checkout {
+.topnav li a.checkout {
     float: right;
     background-color: $b-color;
     color: $text-color;
@@ -45,4 +45,25 @@ $b-color: #fff;
     border-radius: 5px;
     border-color: $text-color;
     font-size: 17px;
+}
+
+.right li {
+    float: right;
+}
+
+
+li {
+    float: left;
+}
+
+.topnav img {
+    width: 5%;
+    height: auto;
+}
+
+.logo img {
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    display: block;
 }

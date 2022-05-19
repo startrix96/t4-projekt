@@ -1,0 +1,50 @@
+footer {
+    height: calc(100vh - 100px);
+    background-color: white;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .column h2 {
+      margin-left: 20px;
+  }
+
+  .column p {
+      margin-left: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+.footer-logo img {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.footer-list li {
+    display: block;
+    float: left;
+    clear: left;
+}
+
+.listtitle h2 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.social-logo {
+    width: 36px;
+    height: auto;
+    padding-left: 20px;
+    display: inline-block;
+}

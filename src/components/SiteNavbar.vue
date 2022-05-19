@@ -1,15 +1,18 @@
 <template>
-    <div class="topnav">
-        <a class="active" href="#home">Forside</a>
-
-        <nav>
-            <router-link to="../views/HomeView">Forside</router-link>
-            <router-link to="../views/ShopView">Shop</router-link>
-            <router-link to="../views/ContactView">Kontakt</router-link>
-            <router-link to="../views/LoginView">Login</router-link>
-            <router-link to="../views/CartView">Kurv</router-link>
+    <div class="topnav">        
+        <nav class="active">
+            <ul>
+                <li><div class="logo"><img src="../assets/logo.png"></div></li>
+            <li><router-link to="../views/HomeView">Forside</router-link></li>
+            <li><router-link to="../views/ShopView">Shop</router-link></li>
+            <li><router-link to="../views/ContactView">Kontakt</router-link></li>
+            </ul>
+            <ul class="right">
+            <li><router-link to="../views/LoginView">Login</router-link></li>
+            <li><router-link to="../views/CartView">Kurv</router-link></li>
+            </ul>
         </nav>
-        <router-view />
+       
 
         <input type="text" placeholder="Search.." />
     </div>
@@ -20,3 +23,4 @@ export default {};
 </script>
 
 <style></style>
+

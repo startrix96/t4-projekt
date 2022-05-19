@@ -7,6 +7,13 @@
         <div class="product" v-for="product in allProducts" :key="product.id">
             <p class="price">{{ product.attributes.price }} kr</p>
             <h3 class="title">{{ product.attributes.title }}</h3>
+
+        <router-link
+        class="link"
+        :to="{ name: 'ProductTemplate', params: { id: product.id } }"
+      >
+        <button> klik mig </button>
+      </router-link>
         </div>
     </div>
 </template>
