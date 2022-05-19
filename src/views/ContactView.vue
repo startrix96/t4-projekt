@@ -1,6 +1,5 @@
 <template>
     <ContactForm />
-
 </template>
 
 <script>
