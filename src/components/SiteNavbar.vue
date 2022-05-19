@@ -10,7 +10,7 @@
             <li><router-link to="../views/CartView">Kurv</router-link></li>
             </ul>
         </nav>
-        <router-view />
+       
 
         <input type="text" placeholder="Search.." />
     </div>
