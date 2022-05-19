@@ -1,7 +1,7 @@
 <template>
 <div class="header">
     <div class="wrapper">
-    <div>Elden Ring</div>
+    <h2>Elden Ring</h2>
         <button class="button button1">Køb nu</button>
     </div>
     <img src="../assets/EldenRing-banner.png" />

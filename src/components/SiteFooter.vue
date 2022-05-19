@@ -5,8 +5,10 @@
     <div class="footer-logo"><img src="../assets/logo.png"></div>  
   </div>
   <div class="column">
-    <h2>Kategorier</h2>
     <ul class="footer-list">
+        <div class="listtitle">
+            <h2>Kategorier</h2>
+        </div>
   <li>Playstation 5</li>
   <li>PC</li>
   <li>Xbox X</li>
@@ -20,12 +22,11 @@
   </div>
   <div class="column">
     <h2>Socials</h2>
-
+<div class="footer-logoline">
  <div class="social-logo"><img src="../assets/facebook.png"></div>
  <div class="social-logo"><img src="../assets/instagram.png"></div>
  <div class="social-logo"><img src="../assets/twitter.png"></div>
- <div class="social-logo"><img src="../assets/twitch.png"></div>
-
+</div>
     </div>
     </div>  
   </footer>

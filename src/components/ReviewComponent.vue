@@ -1,7 +1,7 @@
 <template>
 <div class="Reviews">
     <div class="ReviewItems" v-for="review in reviews" :key="review">
-        <p>{{review.review}}</p> 
+        <p>{{review.results}}</p> 
     </div>
 </div>
 </template>
@@ -17,7 +17,7 @@ export default {
     },
     async created(){
         try{
-            const response = await fetch("https://www.giantbomb.com/api/user_review/[guid]/?api_key=bc5016ffa1092491200fa4664dfb9f9302b2a7ea")
+            const response = await fetch("https://www.gamespot.com/api/reviews/?api_key=24a83f5c479eb148ca1621abbf57ac8b12ed79b0&format=json")
             return await response.json().then(data => this.reviews = data.reviews);
         }finally{
             console.log(this.reviews);
