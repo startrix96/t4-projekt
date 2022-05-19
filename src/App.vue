@@ -2,12 +2,14 @@
     <SiteNavbar />
     <SiteHeader />
     <SiteFooter />
+    <ReviewComponent />
 </template>
 
 <script>
 import SiteNavbar from "./components/SiteNavbar.vue";
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteFooter from "./components/SiteFooter.vue";
+import ReviewComponent from "./components/ReviewComponent.vue";
 
 export default {
     name: "App",
@@ -15,6 +17,7 @@ export default {
         SiteNavbar,
         SiteHeader,
         SiteFooter,
+        ReviewComponent,
     },
 };
 </script>

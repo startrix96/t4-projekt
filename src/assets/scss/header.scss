@@ -17,18 +17,18 @@ body{
     font-size: 30px;
 }
 
-.wrapper div {
+.wrapper h2 {
     position: absolute;
     color: $text-color;
-    font-size: 20px;
-    top: 175px;
+    font-size: 38px;
+    top: 195px;
     left: 50px;
 }
 
 .wrapper button{
   position: absolute;
   color: red;
-  top: 200px;
+  top: 270px;
   left: 45px;
   border: none;
   background-color: $primary-color;

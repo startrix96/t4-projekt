@@ -6,6 +6,8 @@
             <li><router-link to="../views/HomeView">Forside</router-link></li>
             <li><router-link to="../views/ShopView">Shop</router-link></li>
             <li><router-link to="../views/ContactView">Kontakt</router-link></li>
+            </ul>
+            <ul class="right">
             <li><router-link to="../views/LoginView">Login</router-link></li>
             <li><router-link to="../views/CartView">Kurv</router-link></li>
             </ul>
