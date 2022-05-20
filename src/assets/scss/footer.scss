@@ -8,7 +8,14 @@ footer {
     width: 22%;
     padding: 10px;
     margin-left: 20px;
-    background-color: deeppink;
+  }
+
+  .column h2 {
+      margin-left: 20px;
+  }
+
+  .column p {
+      margin-left: 20px;
   }
   
   /* Clear floats after the columns */
@@ -28,4 +35,16 @@ footer {
     display: block;
     float: left;
     clear: left;
+}
+
+.listtitle h2 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.social-logo {
+    width: 36px;
+    height: auto;
+    padding-left: 20px;
+    display: inline-block;
 }
