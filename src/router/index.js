@@ -10,7 +10,7 @@ import ProductTemplate from '../views/ProductTemplate.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'HomeView',
     component: HomeView
   },
   {

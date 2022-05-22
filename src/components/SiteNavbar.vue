@@ -3,7 +3,7 @@
         <nav class="active">
             <ul>
                 <li><div class="logo"><img src="../assets/logo.png"></div></li>
-            <li><router-link to="../views/HomeView">Forside</router-link></li>
+            <li><router-link to="/">Forside</router-link></li>
             <li><router-link to="../views/ShopView">Shop</router-link></li>
             <li><router-link to="../views/ContactView">Kontakt</router-link></li>
             </ul>
