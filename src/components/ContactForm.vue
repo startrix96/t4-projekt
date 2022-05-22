@@ -1,6 +1,6 @@
 <template>
 <h3>Contact Form</h3>
-<form @submit.prevent="HandleSubmit">
+<form @submit.prevent="handleSubmit">
 <label>Navm</label>
 <input type="userName" required v-model="userName">
 
@@ -40,9 +40,8 @@ export default {
     },
     methods: {
         handleSubmit() {
-           /*  console.log('form submitted') ---hvorfor virker den ikke? */
            // besked validation (skal have flere)
-             this.messageError = this.message.length > 15 ? '' : 'vær sød at specificere problemet '
+          this.messageError = this.message.length > 15 ? '' : 'vær sød at specificere problemet '
          }
     }
     
