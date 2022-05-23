@@ -1,4 +1,5 @@
 <template>
+
 <h3>Contact Form</h3>
 <form @submit.prevent="handleSubmit">
 <label>Navm</label>
@@ -13,8 +14,11 @@
 <input type="email" required v-model="email">
 
 <label>Besked</label>
-<input type="message" required v-model="message">
+<textarea type="message" required v-model="message"></textarea>
 <div v-if="messageError"> {{ messageError }}</div>
+
+
+
 
 <div class="submit"></div>
 <button>Send Besked</button>
@@ -23,6 +27,8 @@
 <p>Email: {{ email }}</p>
 <p>tlf: {{ phoneNumber }}</p>
 <p>besked: {{ message }}</p>
+
+
 </template>
 
 

@@ -1,10 +1,11 @@
 form {
-    max-width: 420px;
+    max-width: 300px;
     margin: 30px auto;
     background: white;
     text-align: left;
     padding: 40px;
     border-radius: 10px;
+    border: 5px solid black;
   }
   label {
     color: #aaa;
@@ -20,8 +21,7 @@ form {
     padding: 10px 6px;
     width: 100%;
     box-sizing: border-box;
-    border: none;
-    border-bottom: 1px solid #ddd;
+    border: 5px solid black;
     color: #555;
   }
 
@@ -36,4 +36,12 @@ border-radius: 20px;
 
   .submit {
       text-align: center;
+  }
+  textarea {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid black;
+    color: #555;
   }
