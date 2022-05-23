@@ -1,0 +1,47 @@
+form {
+    max-width: 300px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px solid black;
+  }
+  label {
+    color: #aaa;
+    display: inline-block;
+    margin: 25px 0 15px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid black;
+    color: #555;
+  }
+
+  button {
+background: orange;
+border: 0;
+padding: 10px 20px;
+margin-top: 20px;
+color: white;
+border-radius: 20px;
+  }
+
+  .submit {
+      text-align: center;
+  }
+  textarea {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid black;
+    color: #555;
+  }
