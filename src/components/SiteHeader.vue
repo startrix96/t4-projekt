@@ -1,11 +1,14 @@
 <template>
-<div class="header">
-    <div class="wrapper">
-    <h2>Elden Ring</h2>
-        <button class="button button1">Køb nu</button>
+    <div class="header">
+        <div class="wrapper">
+            <h2>Køb Elden Ring</h2>
+            <router-link class="link" to="../views/ShopView"
+                ><button class="button button1">Shop</button></router-link
+            >
+            <h1>P2P</h1>
+        </div>
+        <img src="../assets/EldenRing-banner.png" />
     </div>
-    <img src="../assets/EldenRing-banner.png" />
-</div>        
 </template>
 
 <script>

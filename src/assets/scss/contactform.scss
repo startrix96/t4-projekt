@@ -1,0 +1,52 @@
+$primary-color: #ed5c00;
+$text-color: #fff;
+
+form {
+    max-width: 300px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 300px;
+}
+label {
+    color: #aaa;
+    display: inline-block;
+    margin: 25px 0 15px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+input {
+    display: block;
+    padding: 10px 6px;
+    box-sizing: border-box;
+    color: #555;
+}
+
+.klik2 {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 11px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5%;
+    text-decoration: none;
+    border: none;
+}
+
+.submit {
+    text-align: center;
+}
+textarea {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #555;
+}

@@ -2,7 +2,7 @@
   <footer>
   <div class="row">
   <div class="column">
-    <div class="footer-logo"><img src="../assets/logo.png"></div>  
+    <router-link to="/"><div class="footer-logo"><img src="../assets/logo.png"></div></router-link>  
   </div>
   <div class="column">
     <ul class="footer-list">
@@ -28,9 +28,13 @@
  <div class="social-logo"><img src="../assets/twitter.png"></div>
 </div>
     </div>
-    </div>  
-  </footer>
+    <div class="copyright">
+      <p>Copyright 2022   |  Seebladsgade 1   |   +45 12 34 56 78</p>  
+    </div>
 
+    </div> 
+  </footer>
+      
 </template>
 
 <script>
