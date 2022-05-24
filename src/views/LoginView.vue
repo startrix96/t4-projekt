@@ -1,13 +1,9 @@
 <template>
-  <h1>test</h1>
+    <h1>Kommer snart</h1>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

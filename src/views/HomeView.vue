@@ -1,6 +1,6 @@
 <template>
     <div class="blurt">
-        <h2 class="headtitle">Hej vi er P2P</h2>
+        <h2 class="headtitle">Velkommen til Pay 2 Play</h2>
         <p>
             Vi er en ny webshop, hvor du kan handle med at der har med spil at gøre, <br />vi har et
             stort udvalg samt gode priser i forhold til andre hjemmesider! <br />
