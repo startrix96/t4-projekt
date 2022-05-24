@@ -1,6 +1,6 @@
 footer {
-    height: calc(30vh - 30px);
-    background-color: white;
+    height: calc(30vh);
+    background-color: #f1f1f1;
 }
 /* Create four equal columns that floats next to each other */
 .column {
@@ -30,6 +30,8 @@ footer {
     overflow: hidden;
     display: block;
     padding-left: 10px;
+    margin-left: 30%;
+    margin-top: 6%;
 }
 
 .footer-list li {
@@ -51,5 +53,7 @@ footer {
 }
 
 .copyright p {
+    clear: both;
     text-align: center;
+    padding-top: 30px;
 }

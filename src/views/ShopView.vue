@@ -1,19 +1,26 @@
 <template>
 <h2 class="headtitle"> Shop </h2>
-<div class="categories" v-for="name in categories" :key="name.id">
+<section>
+    <div class="flytkategorier">
+        <h2>Kategorier</h2>
+        <div class="categories" v-for="name in categories" :key="name.id">
         <p @click="filterProducts(name.id)">{{ name.attributes.name }}</p>
+        </div>
     </div>
 
+    <div class="flytprodukter">
     <div class="productgrid">
         <div class="product" v-for="product in allProducts" :key="product.id">
-            <img src="../../public/images/elden-ring.jpg" />
+            <img src="../../public/images/elden-ring.webp" />
             <h3 class="title">{{ product.attributes.title }}</h3>
             <p class="price">{{ product.attributes.price }} kr</p>
             <router-link class="link" :to="{ name: 'ProductTemplate', params: { id: product.id } }">
-                <button class="klik">Mere info</button>
+                <button class="klik">Se produkt</button>
             </router-link>
         </div>
     </div>
+    </div>
+</section>
 </template>
 
 <script>
@@ -68,10 +75,28 @@ $text-color: #fff;
   color: $primary-color;
 }
 
+section {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.flytkategorier {
+    width: 15%;
+    margin-top: 1.2%;
+}
+
+.flytkategorier h2 {
+    margin-left: 21%;
+}
+
+.flytprodukter {
+    width: 90%;
+}
+
 .categories {
-    display: inline-block;
-    padding-right: 20px;
     margin-left: 50px;
+    margin-bottom: -2%;
    
 }
 .link{
@@ -85,13 +110,15 @@ $text-color: #fff;
 
 .productgrid img {
     padding-top: 10px;
-    padding-left: 17%;
+    padding-left: 18%;
+    width: 65%;
+    height: 100%;
 }
 
 .klik {
     display: flex;
     text-align: center;
-    margin-left: 36%;
+    margin-left: 34%;
     background-color: $primary-color;
     color: $text-color;
     padding: 11px 24px;
@@ -104,11 +131,11 @@ $text-color: #fff;
 }
 
 .product {
-    height: 50%;
-    background-color: lightgray;
+    height: 60%;
+    background-color: white;
     margin: 40px 40px;
     max-width: 100%;
-    width: 28%;
+    width: 27%;
     h3 {
         font-size: 20px;
         text-align: center;
@@ -119,5 +146,6 @@ $text-color: #fff;
     color: #ed5c00;
     font-weight: 600;
     font-size: 18px;
+    margin-top: -4%;
 }
 </style>

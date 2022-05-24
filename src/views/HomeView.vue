@@ -9,7 +9,7 @@
     <h2 class="headtitle"> Ugens Top Spil </h2>
     <div class="homeproductgrid"> 
     <div class="product" v-for="product in products.slice(0,3)" :key="product.id">
-      <img src="../../public/images/elden-ring.jpg" />
+      <img src="../../public/images/elden-ring.webp" />
       <h3 class="title">{{ product.attributes.title }}</h3>
       <p class="price">{{ product.attributes.price }} kr</p>
       
@@ -26,7 +26,7 @@
     <h2 class="headtitle"> Nyeste Spil </h2>
     <div class="homeproductgrid"> 
     <div class="product" v-for="product in products.slice(5,8)" :key="product.id">
-      <img src="../../public/images/elden-ring.jpg" />
+      <img src="../../public/images/elden-ring.webp" />
       <h3 class="title">{{ product.attributes.title }}</h3>
       <p class="price">{{ product.attributes.price }} kr</p>
       
@@ -99,6 +99,8 @@ $text-color: #fff;
 .homeproductgrid img {
     padding-top: 10px;
     padding-left: 17%;
+    width: 65%;
+    height: 100%;
 }
 
 .klikhome {
