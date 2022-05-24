@@ -17,18 +17,25 @@ body{
     font-size: 30px;
 }
 
+.wrapper h1 {
+    transform: translate(-50%, 130%);
+    position: absolute;
+    left: 50%;
+    color: $primary-color;
+    font-size: 54pt;
+}
+
 .wrapper h2 {
     position: absolute;
     color: $text-color;
-    font-size: 38px;
-    top: 195px;
+    font-size: 30px;
+    top: 200px;
     left: 50px;
 }
 
 .wrapper button{
   position: absolute;
-  color: red;
-  top: 270px;
+  top: 275px;
   left: 45px;
   border: none;
   background-color: $primary-color;
@@ -38,6 +45,7 @@ body{
     font-size: 16px;
     cursor: pointer;
     border-radius: 7px;
+    text-decoration: none;
 }
 
 .header img{

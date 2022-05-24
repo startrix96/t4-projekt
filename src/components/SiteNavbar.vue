@@ -2,7 +2,8 @@
     <div class="topnav">        
         <nav class="active">
             <ul>
-                <li><div class="logo"><img src="../assets/logo.png"></div></li>
+
+                <li><router-link to="/"><div class="logo"><img src="../assets/logo.png"></div></router-link></li>
             <li><router-link to="/">Forside</router-link></li>
             <li><router-link to="../views/ShopView">Shop</router-link></li>
             <li><router-link to="../views/ContactView">Kontakt</router-link></li>
@@ -13,7 +14,6 @@
             </ul>
         </nav>
        
-
         <input type="text" placeholder="Search.." />
     </div>
 </template>

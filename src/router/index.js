@@ -5,6 +5,7 @@ import ContactView from '../views/ContactView.vue'
 import CartView from '../views/CartView.vue'
 import LoginView from '../views/LoginView.vue'
 import ProductTemplate from '../views/ProductTemplate.vue'
+import FakeWeb from '../views/FakeWeb.vue'
 
 
 const routes = [
@@ -43,6 +44,13 @@ const routes = [
     path: '/LoginView',
     name: 'login',
     component:LoginView
+  
+  },
+
+  {
+    path: '/FakeWeb',
+    name: 'fake',
+    component:FakeWeb
   
   },
 ]

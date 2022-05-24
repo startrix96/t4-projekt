@@ -1,8 +1,7 @@
 <template>
-
-<h3>Contact Form</h3>
 <form @submit.prevent="handleSubmit">
-<label>Navm</label>
+<h3>Kontakt os</h3>
+<label>Navn</label>
 <input type="userName" required v-model="userName">
 <div v-if="userNameError"> {{ userNameError }}</div>
 
@@ -19,16 +18,9 @@
 
 
 
-
 <div class="submit"></div>
-<button>Send Besked</button>
+<button class="klik2">Send Besked</button>
 </form>
-
-<p>Email: {{ email }}</p>
-<p>tlf: {{ phoneNumber }}</p>
-<p>besked: {{ message }}</p>
-
-
 </template>
 
 

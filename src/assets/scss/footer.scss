@@ -25,10 +25,11 @@ footer {
   }
   
 .footer-logo img {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     overflow: hidden;
     display: block;
+    padding-left: 10px;
 }
 
 .footer-list li {
@@ -47,4 +48,8 @@ footer {
     height: auto;
     padding-left: 20px;
     display: inline-block;
+}
+
+.copyright p {
+    text-align: center;
 }

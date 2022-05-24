@@ -1,8 +1,6 @@
 <template>
-<div class="split left">
+<div class="split">
   <ContactInformation />
-</div>
-<div class="split right">
     <ContactForm />
     </div>
 </template>

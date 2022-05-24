@@ -49,6 +49,11 @@ $b-color: #fff;
 
 .right li {
     float: right;
+    
+}
+
+.right li:first-child{
+    padding-right: 25px;
 }
 
 
@@ -56,14 +61,11 @@ li {
     float: left;
 }
 
-.topnav img {
-    width: 5%;
-    height: auto;
-}
-
 .logo img {
-    width: 70%;
-    height: 70%;
-    overflow: hidden;
+    width: 60%;
+    height: 60%;
     display: block;
+    top: 0%;
+    margin-left: 0%;
+    margin-right: -5%;
 }

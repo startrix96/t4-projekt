@@ -1,0 +1,55 @@
+$primary-color: #ed5c00;
+$text-color: #fff;
+
+.flex-container {
+    display: flex;
+    width: 30%;
+    margin-left: 50%;
+}
+
+strong { 
+    font-size: 20px;
+  }
+
+.flex-container2 {
+    display: flex;
+    width: 30%;
+    margin-left: 50%;
+    padding-right: 20px;
+}
+
+.fakebuy {
+    display: flex;
+    text-align: center;
+    margin-left: 50%;
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 11px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 5%;
+}
+
+.flexstars{
+    display: flex;
+    width: 30%;
+    margin-left: 50%;
+}
+
+.clip-star {
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+  }
+
+.clip-stargrey {
+    background: grey;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 20px;
+    width: 20px; 
+}
