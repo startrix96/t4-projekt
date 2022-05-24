@@ -1,26 +1,29 @@
 <template>
-<h2 class="headtitle"> Shop </h2>
-<section>
-    <div class="flytkategorier">
-        <h2>Kategorier</h2>
-        <div class="categories" v-for="name in categories" :key="name.id">
-        <p @click="filterProducts(name.id)">{{ name.attributes.name }}</p>
+    <h2 class="headtitle">Shop</h2>
+    <section>
+        <div class="flytkategorier">
+            <h2>Kategorier</h2>
+            <div class="categories" v-for="name in categories" :key="name.id">
+                <p @click="filterProducts(name.id)">{{ name.attributes.name }}</p>
+            </div>
         </div>
-    </div>
 
-    <div class="flytprodukter">
-    <div class="productgrid">
-        <div class="product" v-for="product in allProducts" :key="product.id">
-            <img src="../../public/images/elden-ring.webp" />
-            <h3 class="title">{{ product.attributes.title }}</h3>
-            <p class="price">{{ product.attributes.price }} kr</p>
-            <router-link class="link" :to="{ name: 'ProductTemplate', params: { id: product.id } }">
-                <button class="klik">Se produkt</button>
-            </router-link>
+        <div class="flytprodukter">
+            <div class="productgrid">
+                <div class="product" v-for="product in allProducts" :key="product.id">
+                    <img src="../../public/images/elden-ring.webp" />
+                    <h3 class="title">{{ product.attributes.title }}</h3>
+                    <p class="price">{{ product.attributes.price }} kr</p>
+                    <router-link
+                        class="link"
+                        :to="{ name: 'ProductTemplate', params: { id: product.id } }"
+                    >
+                        <button class="klik">Se produkt</button>
+                    </router-link>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-</section>
+    </section>
 </template>
 
 <script>
@@ -70,9 +73,9 @@ $primary-color: #ed5c00;
 $text-color: #fff;
 
 .headtitle {
-  text-align: center;
-  font-size: 36px;
-  color: $primary-color;
+    text-align: center;
+    font-size: 36px;
+    color: $primary-color;
 }
 
 section {
@@ -97,9 +100,8 @@ section {
 .categories {
     margin-left: 50px;
     margin-bottom: -2%;
-   
 }
-.link{
+.link {
     text-decoration: none;
 }
 
@@ -128,6 +130,7 @@ section {
     border-radius: 7px;
     margin-bottom: 5%;
     text-decoration: none;
+    border: none;
 }
 
 .product {

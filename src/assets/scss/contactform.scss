@@ -10,8 +10,8 @@ form {
     border-radius: 10px;
     border: 2px solid black;
     width: 300px;
-  }
-  label {
+}
+label {
     color: #aaa;
     display: inline-block;
     margin: 25px 0 15px;
@@ -19,15 +19,15 @@ form {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
-  }
-  input {
+}
+input {
     display: block;
     padding: 10px 6px;
     box-sizing: border-box;
     color: #555;
-  }
+}
 
-  .klik2 {
+.klik2 {
     background-color: $primary-color;
     color: $text-color;
     padding: 11px 24px;
@@ -37,16 +37,16 @@ form {
     border-radius: 7px;
     margin-top: 5%;
     text-decoration: none;
+    border: none;
 }
 
-  .submit {
-      text-align: center;
-  }
-  textarea {
+.submit {
+    text-align: center;
+}
+textarea {
     display: block;
     padding: 10px 6px;
     width: 100%;
     box-sizing: border-box;
-    border: 2px solid black;
     color: #555;
-  }
+}
