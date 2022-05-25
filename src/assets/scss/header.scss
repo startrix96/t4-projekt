@@ -1,83 +1,87 @@
 body {
     margin: 0 auto;
-  }
-  
-  .header {
+}
+
+.header {
     padding: 0px;
     color: #fff;
     font-size: 30px;
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
     position: relative;
     color: #fff;
     font-size: 30px;
-  
+
     h1 {
-      transform: translate(-50%, 130%);
-      position: absolute;
-      left: 50%;
-      color: #ed5c00;
-      font-size: 54pt;
+        transform: translate(-50%, 130%);
+        position: absolute;
+        left: 50%;
+        color: #ed5c00;
+        font-size: 54pt;
     }
-  
+
     h2 {
-      position: absolute;
-      color: #fff;
-      font-size: 30px;
-      top: 200px;
-      left: 50px;
+        position: absolute;
+        color: #fff;
+        font-size: 30px;
+        top: 200px;
+        left: 50px;
     }
-  
+
     button {
-      position: absolute;
-      top: 275px;
-      left: 45px;
-      border: none;
-      background-color: #ed5c00;
-      color: #fff;
-      padding: 15px 32px;
-      text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 7px;
-      text-decoration: none;
-    }
-  }
-  
-  .header img {
-    height: 100%;
-    width: 100%;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .wrapper {
-      h1 {
-        transform: translate(-50%, 0%);
         position: absolute;
-        left: 50%;
-        color: #ed5c00;
-        font-size: 27pt;
-      }
-  
-      h2, button {
-        display: none;
-      }
+        top: 275px;
+        left: 45px;
+        border: none;
+        background-color: #ed5c00;
+        color: #fff;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 7px;
+        text-decoration: none;
     }
-  }
-  
-  @media screen and (max-width: 1450px) and (min-width: 700px) {
+}
+
+.header {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .wrapper {
-      h1 {
-        transform: translate(-50%, 100%);
-        position: absolute;
-        left: 50%;
-        color: #ed5c00;
-        font-size: 50pt;
-      }
-  
-      h2, button {
-        display: none;
-      }
+        h1 {
+            transform: translate(-50%, 0%);
+            position: absolute;
+            left: 50%;
+            color: #ed5c00;
+            font-size: 27pt;
+        }
+
+        h2,
+        button {
+            display: none;
+        }
     }
-  }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 700px) {
+    .wrapper {
+        h1 {
+            transform: translate(-50%, 100%);
+            position: absolute;
+            left: 50%;
+            color: #ed5c00;
+            font-size: 50pt;
+        }
+
+        h2,
+        button {
+            display: none;
+        }
+    }
+}

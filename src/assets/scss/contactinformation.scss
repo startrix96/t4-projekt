@@ -3,34 +3,37 @@
     padding-top: 10px;
 }
 
-.contactinformation img {
-    margin: 0;
-    padding-top: 20px;
-  }
-  
-  .querycontactinfo, .queryheadtitle {
+.contactinformation {
+    img {
+        margin: 0;
+        padding-top: 20px;
+    }
+}
+
+.querycontactinfo,
+.queryheadtitle {
     display: none;
-  }
-  
-  @media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
     .contactinformation {
-      display: none;
+        display: none;
     }
-  
+
     .queryheadtitle {
-      display: block;
-      text-align: center;
-      font-size: 36px;
-      color: #ed5c00;
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        color: #ed5c00;
     }
-  
+
     .querycontactinfo {
-      display: block;
-      text-align: center;
-      padding-top: 10px;
-  
-      img {
-        margin-top: 5%;
-      }
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+
+        img {
+            margin-top: 5%;
+        }
     }
-  }
+}
