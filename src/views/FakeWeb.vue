@@ -36,7 +36,7 @@ $text-color: #fff;
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   form {
       display: none;
   }

@@ -89,7 +89,7 @@ section {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     section {
         display: none;
     }
@@ -153,4 +153,75 @@ section {
     font-size: 14px;
     margin-top: -4%;
 }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 701px) {
+    section {
+        display: none;
+    }
+
+    .queryshop {
+        display: none;
+    }
+
+    .flytkategorier {
+        display: none;
+    }
+    .section {
+        display: inline-block;
+    }
+    
+    .querylaptopshop {
+        display: block;
+    }
+
+    .querylaptopkategorier {
+        display: block;
+        
+    }
+
+    .flytkategorier {
+        width: 0%;
+    }
+
+    .flytprodukter {
+        width: 100%;
+    }   
+    
+    .productgrid img {
+    padding-top: 10px;
+    padding-left: 30%;
+    width: 55%;
+    height: 100%;
+    
+}
+    .klik {
+  display: block;
+  width: 30%;
+  margin-left: 45%;
+}
+
+    .shoplaptopproduct {
+    height: 60%;
+    background-color: white;
+    margin: 40px 40px;
+    max-width: 100%;
+    width: 40%;
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 14%;
+        display: block;
+        width: 90%;
+    }
+    }
+
+.price {
+    text-align: center;
+    color: #ed5c00;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: -4%;
+    margin-left: 15%;
+}   
 }

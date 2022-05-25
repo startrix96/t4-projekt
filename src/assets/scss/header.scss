@@ -53,15 +53,33 @@ body{
         width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .wrapper h1 {
         transform: translate(-50%, 0%);
         position: absolute;
         left: 50%;
         color: $primary-color;
-        font-size: 24pt;
+        font-size: 27pt;
     }
 
+    .wrapper h2 {
+        display: none;
+    }
+
+    .wrapper button{
+        display: none;
+      }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px) {
+    .wrapper h1 {
+        transform: translate(-50%, 100%);
+        position: absolute;
+        left: 50%;
+        color: $primary-color;
+        font-size: 50pt;
+    }
+    
     .wrapper h2 {
         display: none;
     }

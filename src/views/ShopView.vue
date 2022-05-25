@@ -49,6 +49,31 @@
             </div>
         </div>
     </section>
+
+    <section class="querylaptopshop">
+        <div class="querylaptopkategorier">
+            <h2>Kategorier</h2>
+            <div class="categories" v-for="name in categories" :key="name.id">
+                <p @click="filterProducts(name.id)">{{ name.attributes.name }}</p>
+            </div>
+        </div>
+
+        <div class="flytprodukter">
+            <div class="productgrid">
+                <div class="shoplaptopproduct" v-for="product in allProducts" :key="product.id">
+                    <img src="../../public/images/elden-ring.webp" />
+                    <h3 class="title">{{ product.attributes.title }}</h3>
+                    <p class="price">{{ product.attributes.price }} kr</p>
+                    <router-link
+                        class="link"
+                        :to="{ name: 'ProductTemplate', params: { id: product.id } }"
+                    >
+                        <button class="klik">Se produkt</button>
+                    </router-link>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -93,6 +118,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 
 </style>
