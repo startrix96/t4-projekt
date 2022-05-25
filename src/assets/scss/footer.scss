@@ -1,5 +1,5 @@
 footer {
-    height: calc(30vh);
+    height: calc(50vh);
     background-color: #f1f1f1;
 }
 /* Create four equal columns that floats next to each other */
@@ -62,8 +62,41 @@ footer {
     display: none;
 }
 
+@media only screen and (max-width: 1340px) {
+    .column {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        margin-left: 150px;
+      }
+    
+      .footerquery {
+        display: none;
+    }
 
-@media only screen and (max-width: 1200px) {
+      .footer-logo img {
+        width: 30%;
+        height: 30%;
+        overflow: hidden;
+        display: block;
+        padding-left: 10px;
+        margin-left: 2%;
+        margin-top: 6%;
+    }
+    
+      .column p {
+          margin-left: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        display: table;
+        clear: both;
+      }
+}
+
+
+@media only screen and (max-width: 800px) {
     footer {
         display: none;
     }
@@ -77,7 +110,7 @@ footer {
     .querylogo {
         width: 40%;
         height: 40%;
-        margin-left: 25%;
+        margin-left: 30%;
         padding-top: 5%;
         margin-bottom: 10%;
     }
