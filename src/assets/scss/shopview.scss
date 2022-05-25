@@ -1,0 +1,204 @@
+.headtitle {
+    text-align: center;
+    font-size: 36px;
+    color: #ed5c00;
+  }
+  
+  section {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .flytkategorier {
+    width: 15%;
+    margin-top: 1.2%;
+  
+    h2 {
+      margin-left: 21%;
+    }
+  }
+  
+  .flytprodukter {
+    width: 90%;
+  }
+  
+  .categories {
+    margin-left: 50px;
+    margin-bottom: -2%;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .productgrid {
+    display: flex;
+    flex-wrap: wrap;
+  
+    img {
+      padding-top: 10px;
+      padding-left: 18%;
+      width: 65%;
+      height: 100%;
+    }
+  }
+  
+  .klik {
+    display: flex;
+    text-align: center;
+    margin-left: 34%;
+    background-color: #ed5c00;
+    color: #fff;
+    padding: 11px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .product {
+    height: 60%;
+    background-color: white;
+    margin: 40px 40px;
+    max-width: 100%;
+    width: 27%;
+  
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  
+  .price {
+    text-align: center;
+    color: #ed5c00;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -4%;
+  }
+  
+  .querykategorier, .queryshop, .querylaptopshop {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    section, .flytkategorier {
+      display: none;
+    }
+  
+    .section {
+      display: inline-block;
+    }
+  
+    .queryshop, .querykategorier {
+      display: block;
+    }
+  
+    .flytkategorier {
+      width: 0%;
+    }
+  
+    .flytprodukter {
+      width: 100%;
+    }
+  
+    .productgrid img {
+      padding-top: 10px;
+      padding-left: 30%;
+      width: 130%;
+      height: 100%;
+    }
+  
+    .klik {
+      display: block;
+      width: 90%;
+      margin-left: 55%;
+    }
+  
+    .shopproduct {
+      height: 60%;
+      background-color: white;
+      margin: 40px 40px;
+      max-width: 100%;
+      width: 40%;
+  
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 55%;
+        display: block;
+        width: 90%;
+      }
+    }
+  
+    .price {
+      text-align: center;
+      color: #ed5c00;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: -4%;
+      margin-left: 55%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200x) {
+    section, .queryshop, .flytkategorier {
+      display: none;
+    }
+  
+    .section {
+      display: inline-block;
+    }
+  
+    .querylaptopshop, .querylaptopkategorier {
+      display: block;
+    }
+  
+    .flytkategorier {
+      width: 0%;
+    }
+  
+    .flytprodukter {
+      width: 100%;
+    }
+  
+    .productgrid img {
+      padding-top: 10px;
+      padding-left: 30%;
+      width: 55%;
+      height: 100%;
+    }
+  
+    .klik {
+      display: block;
+      width: 30%;
+      margin-left: 55%;
+    }
+  
+    .shoplaptopproduct {
+      height: 60%;
+      background-color: white;
+      margin: 40px 40px;
+      max-width: 100%;
+      width: 50%;
+  
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        width: 90%;
+      }
+    }
+  
+    .price {
+      text-align: center;
+      color: #ed5c00;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: -4%;
+    }
+  }

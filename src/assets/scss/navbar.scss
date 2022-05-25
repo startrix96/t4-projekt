@@ -1,71 +1,155 @@
-$primary-color: #ed5c00;
-$text-color: #000;
-$b-color: #fff;
-
-.topnav li{
-    overflow: hidden;
-    background-color: $b-color;
-}
-
-.topnav li a {
+.topnav {
+    li {
+      overflow: hidden;
+      background-color: #fff;
+  
+      a {
+        float: left;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+  
+        &:hover {
+          background-color: #ddd;
+          color: #000;
+        }
+      }
+  
+      .active {
+        margin-left: 150px;
+        color: #000;
+      }
+  
+      a {
+        &.login {
+          float: right;
+          color: #000;
+        }
+  
+        &.checkout {
+          float: right;
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  
+    input[type="text"] {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border-radius: 5px;
+      border-color: #000;
+      font-size: 17px;
+    }
+  }
+  
+  .right li {
+    float: right;
+  
+    &:first-child {
+      padding-right: 25px;
+    }
+  }
+  
+  li {
     float: left;
-    color: $text-color;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav li a:hover {
-    background-color: #ddd;
-    color: $text-color;
-}
-
-.topnav li .active {
-    margin-left: 150px;
-    color: $text-color;
-}
-
-.topnav li a.login {
-    float: right;
-    color: $text-color;
-}
-
-.topnav li a.checkout {
-    float: right;
-    background-color: $b-color;
-    color: $text-color;
-}
-
-.topnav input[type="text"] {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border-radius: 5px;
-    border-color: $text-color;
-    font-size: 17px;
-}
-
-.right li {
-    float: right;
-    
-}
-
-.right li:first-child{
-    padding-right: 25px;
-}
-
-
-li {
-    float: left;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 60%;
     height: 60%;
     display: block;
     top: 0%;
     margin-left: 0%;
     margin-right: -5%;
-}
+  }
+  
+  .querytopnav {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .topnav {
+      display: none;
+    }
+  
+    .querytopnav {
+      display: inline-block;
+  
+      li {
+        overflow: hidden;
+        background-color: #fff;
+  
+        a {
+          float: left;
+          color: #000;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 10px;
+  
+          &:hover {
+            background-color: #ddd;
+            color: #000;
+          }
+        }
+  
+        .active {
+          margin-left: 15px;
+          color: #000;
+        }
+  
+        a.checkout {
+          float: right;
+          background-color: #fff;
+          color: #000;
+        }
+      }
+  
+      input[type="text"] {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 6px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border-color: #000;
+        font-size: 7px;
+      }
+    }
+  
+    .right li {
+      float: right;
+  
+      &:first-child {
+        padding-right: 5px;
+      }
+    }
+  
+    li {
+      float: left;
+    }
+  
+    .logo img {
+      width: 30%;
+      height: 30%;
+      display: block;
+      top: -5%;
+      margin-left: 0%;
+    }
+  
+    .querynav {
+      float: left;
+      color: #000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+      margin-top: -5%;
+      margin-bottom: -5%;
+    }
+  }
