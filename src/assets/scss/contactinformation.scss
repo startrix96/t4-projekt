@@ -6,36 +6,31 @@
 .contactinformation img {
     margin: 0;
     padding-top: 20px;
-}
-
-.querycontactinfo {
+  }
+  
+  .querycontactinfo, .queryheadtitle {
     display: none;
-}
-
-.queryheadtitle {
-    display: none;
-}
-
-@media only screen and (max-width: 1200px) {
+  }
+  
+  @media only screen and (max-width: 1200px) {
     .contactinformation {
-        display: none;
+      display: none;
     }
-
+  
     .queryheadtitle {
-        display: block;
-        text-align: center;
-        font-size: 36px;
-        color: #ed5c00;
+      display: block;
+      text-align: center;
+      font-size: 36px;
+      color: #ed5c00;
     }
-
+  
     .querycontactinfo {
-        display: block;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    .querycontactinfo img {
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+  
+      img {
         margin-top: 5%;
+      }
     }
-
-}
+  }
