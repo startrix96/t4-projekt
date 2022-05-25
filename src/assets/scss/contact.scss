@@ -3,3 +3,17 @@
     display: flex;
     justify-content: center;
   }
+
+.querysplit {
+  display: none;
+}
+
+  @media screen and (max-width: 600px) {
+  .split {
+    display: none;
+  }
+
+  .querysplit {
+    display: block;
+  }
+}

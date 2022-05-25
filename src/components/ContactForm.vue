@@ -19,6 +19,27 @@
         <div class="submit"></div>
         <button class="klik2">Send Besked</button>
     </form>
+
+    <form class="queryform" @submit.prevent="handleSubmit">
+        <h3>Kontakt os</h3>
+        <label>Navn</label>
+        <input type="userName" required v-model="userName" />
+        <div v-if="userNameError">{{ userNameError }}</div>
+
+        <label>Telefonnummer</label>
+        <input type="phoneNumber" required v-model="phoneNumber" />
+        <div v-if="phoneNumberError">{{ phoneNumberError }}</div>
+
+        <label>Email</label>
+        <input type="email" required v-model="email" />
+
+        <label>Besked</label>
+        <textarea type="message" required v-model="message"></textarea>
+        <div v-if="messageError">{{ messageError }}</div>
+
+        <div class="submit"></div>
+        <button class="klik2">Send Besked</button>
+    </form>
 </template>
 
 <script>

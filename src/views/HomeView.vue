@@ -1,6 +1,6 @@
 <template>
     <div class="blurt">
-        <h2 class="headtitle">Velkommen til Pay 2 Play</h2>
+        <h2>Velkommen til Pay 2 Play</h2>
         <p>
             Vi er en ny webshop, hvor du kan handle med at der har med spil at gøre, <br />vi har et
             stort udvalg samt gode priser i forhold til andre hjemmesider! <br />
@@ -12,7 +12,7 @@
     <div v-else>
         <h2 class="headtitle">Ugens Top Spil</h2>
         <div class="homeproductgrid">
-            <div class="product" v-for="product in products.slice(0, 3)" :key="product.id">
+            <div class="product" v-for="product in products.slice(5, 8)" :key="product.id">
                 <img src="../../public/images/elden-ring.webp" />
                 <h3 class="title">{{ product.attributes.title }}</h3>
                 <p class="price">{{ product.attributes.price }} kr</p>
@@ -29,9 +29,9 @@
 
     <div v-if="error">{{ error }}</div>
     <div v-else>
-        <h2 class="headtitle">Nyeste Spil</h2>
+        <h2 class="nyespil">Nyeste Spil</h2>
         <div class="homeproductgrid">
-            <div class="product" v-for="product in products.slice(5, 8)" :key="product.id">
+            <div class="product" v-for="product in products.slice(9, 12)" :key="product.id">
                 <img src="../../public/images/elden-ring.webp" />
                 <h3 class="title">{{ product.attributes.title }}</h3>
                 <p class="price">{{ product.attributes.price }} kr</p>
@@ -83,11 +83,19 @@ $primary-color: #ed5c00;
 $text-color: #fff;
 .blurt h2 {
     text-align: center;
+    font-size: 36px;
+    color: $primary-color;
 }
 
 .blurt p {
     text-align: center;
     padding-bottom: 50px;
+}
+
+.nyespil {
+    text-align: center;
+    font-size: 36px;
+    color: $primary-color;
 }
 
 .homeproductgrid {
@@ -137,5 +145,60 @@ $text-color: #fff;
     color: #ed5c00;
     font-weight: 600;
     font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .blurt h2 {
+    text-align: center;
+    font-size: 50px;
+    color: $primary-color;
+    margin-bottom: 0%;
+}
+
+.nyespi {
+    margin-top: 30px;
+}
+
+.blurt p {
+  display: inline-block;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.homeproductgrid {
+    display: block;
+    margin-left: 15%;
+}
+
+.link {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.homeproductgrid img {
+    padding-top: 10px;
+    width: 200%;
+    height: 100%;
+    margin-left: 0%;
+    padding-left: 0;
+}
+
+.klikhome {
+  display: block;
+  width: 90%;
+  margin-left: 55%;
+}
+
+.product h3 {
+  margin-left: 55%;
+  display: block;
+  width: 90%;
+}
+
+.price {
+  display: block;
+  margin-left: 55%;
+  width: 90%;  
+}
 }
 </style>

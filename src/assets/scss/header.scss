@@ -52,3 +52,21 @@ body{
         height: 100%;
         width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .wrapper h1 {
+        transform: translate(-50%, 0%);
+        position: absolute;
+        left: 50%;
+        color: $primary-color;
+        font-size: 24pt;
+    }
+
+    .wrapper h2 {
+        display: none;
+    }
+
+    .wrapper button{
+        display: none;
+      }
+}

@@ -50,3 +50,30 @@ textarea {
     box-sizing: border-box;
     color: #555;
 }
+
+.queryform {
+  display: none;
+
+}
+
+@media screen and (max-width: 600px) {
+  form {
+      display: none;
+  }
+
+  .queryform {
+    max-width: 300px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 200px;
+    display: block;
+  }
+  
+  
+
+}
+

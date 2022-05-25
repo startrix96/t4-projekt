@@ -3,6 +3,11 @@
   <ContactInformation />
     <ContactForm />
     </div>
+
+<div class="querysplit">
+  <ContactInformation />
+    <ContactForm />
+    </div>
 </template>
 
 <script>

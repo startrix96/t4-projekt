@@ -113,3 +113,55 @@ strong {
 .centerreview {
     text-align: center;
 }
+
+.queryfirstsection {
+    display: none;
+}
+
+.querysecondsection {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .firstsection {
+        display: none;
+    }
+
+    .secondsection {
+        display: none;
+    }
+
+    .centerreview {
+        display: none;
+    }
+
+    .queryfirstsection {
+        display: block;
+    }
+
+    .queryflexsection {
+        margin-left: 25%;
+    }
+
+    .queryfirstsection img {
+        width: 100%;
+    }
+
+    .querycenterreview {
+        text-align: center;
+    }
+
+    .querysecondsection {
+        display: block;
+        margin-left: 15%;
+    }
+
+    .queryproduct {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: #ed5c00;
+    }
+
+
+  }

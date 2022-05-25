@@ -24,6 +24,31 @@
             </div>
         </div>
     </section>
+
+    <section class="queryshop">
+        <div class="querykategorier">
+            <h2>Kategorier</h2>
+            <div class="categories" v-for="name in categories" :key="name.id">
+                <p @click="filterProducts(name.id)">{{ name.attributes.name }}</p>
+            </div>
+        </div>
+
+        <div class="flytprodukter">
+            <div class="productgrid">
+                <div class="product" v-for="product in allProducts" :key="product.id">
+                    <img src="../../public/images/elden-ring.webp" />
+                    <h3 class="title">{{ product.attributes.title }}</h3>
+                    <p class="price">{{ product.attributes.price }} kr</p>
+                    <router-link
+                        class="link"
+                        :to="{ name: 'ProductTemplate', params: { id: product.id } }"
+                    >
+                        <button class="klik">Se produkt</button>
+                    </router-link>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -150,5 +175,76 @@ section {
     font-weight: 600;
     font-size: 18px;
     margin-top: -4%;
+}
+
+.querykategorier {
+    display: none;
+}
+
+.queryshop {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        display: none;
+    }
+
+    .flytkategorier {
+        display: none;
+    }
+    .section {
+        display: inline-block;
+    }
+    
+    .queryshop {
+        display: block;
+    }
+
+    .querykategorier {
+        display: block;
+        
+    }
+
+    .flytkategorier {
+        width: 0%;
+    }
+
+    .flytprodukter {
+        width: 100%;
+    }   
+    
+    .productgrid img {
+    padding-top: 10px;
+    padding-left: 30%;
+    width: 130%;
+    height: 100%;
+    
+}
+    .klik {
+  display: block;
+  width: 90%;
+  margin-left: 55%;
+}
+
+    .product {
+    height: 60%;
+    background-color: white;
+    margin: 40px 40px;
+    max-width: 100%;
+    width: 40%;
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    }
+
+.price {
+    text-align: center;
+    color: #ed5c00;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: -4%;
+}
 }
 </style>

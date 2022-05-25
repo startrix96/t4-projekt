@@ -57,3 +57,56 @@ footer {
     text-align: center;
     padding-top: 30px;
 }
+
+.footerquery {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: none;
+    }
+
+    .footerquery {
+        display: block;
+        height: auto;
+    background-color: #f1f1f1;
+    }
+
+    .querylogo {
+        width: 40%;
+        height: 40%;
+        margin-left: 25%;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .querykategorier {
+        margin-left: 25%;
+    }
+
+    .querykontakt {
+        margin-top: 25%;
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+
+    .querysocials {
+        margin-left: 35%;
+    }
+
+    .social-logo {
+        width: 36px;
+        height: auto;
+        padding-left: 5%;
+        display: block;
+    }
+
+    .copyright p {
+    clear: both;
+    text-align: center;
+    padding-bottom: 10%;
+    margin-bottom: -10%;
+}
+
+}
