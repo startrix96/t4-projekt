@@ -39,7 +39,8 @@
   <div class="querylogo">
     <router-link to="/"><div class="footer-logo"><img src="../assets/logo.png"></div></router-link> 
   </div>
-  <div class="querykategorier">
+  <div class="displayItems">
+  <div class="querykategorier2">
     <ul class="footer-list">
         <div class="listtitle">
             <h2>Kategorier</h2>
@@ -55,6 +56,7 @@
     <h2>Kontakt</h2>
             <p>Seebladsgade 1,<br> 5000 Odense</p>
             <p>+45 12 34 56 78</p>
+    </div>
     </div>
     <div class="querysocials">
     <h2>Socials</h2>
